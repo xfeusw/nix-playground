@@ -1,0 +1,15 @@
+# Nix build results
+/result
+/result-*
+
+# Home-Manager and flakes
+/home-manager
+
+# direnv
+/.direnv
+/hosts/acer/secrets.yaml
+
+# Misc
+*.swp
+test.nix.blank
+github-token
