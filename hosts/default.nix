@@ -2,12 +2,13 @@
   inputs,
   pkgs,
   system,
+  nixpkgs,
   ...
 }: let
   mkHost = {
     hostPath,
   }:
-    pkgs.lib.nixosSystem {
+    nixpkgs.lib.nixosSystem {
       inherit system pkgs;
       specialArgs = { inherit inputs; };
       modules = [hostPath];

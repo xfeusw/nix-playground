@@ -2,7 +2,7 @@
   description = "Nix playground";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
 
     flake-utils.url = "github:numtide/flake-utils";
   };
@@ -25,7 +25,8 @@
         inputs
         pkgs
         system
+        nixpkgs
         ;
     };
-  }
+  };
 }

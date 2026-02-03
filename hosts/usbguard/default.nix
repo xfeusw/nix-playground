@@ -49,12 +49,14 @@
       zed-editor
       neovim
       git
+      gh
+      fastfetch
     ];
   };
 
   programs.firefox.enable = true;
 
-  nixpkgs.config.allowUnfree = true;
+  # nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
